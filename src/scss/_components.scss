@@ -1,0 +1,19 @@
+//
+.section-title {
+    color: $section-title-color;
+    font-family: 'Manrope';
+    font-size: toRem(20);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5; /* 36px */
+
+    	// Laptop
+	@media only screen and (min-width: toEm(768)) {
+        font-size: toRem(28);
+	}
+
+	// Desktop
+	@media only screen and (min-width: toEm(1757)) {
+        font-size: toRem(38);
+	}
+}

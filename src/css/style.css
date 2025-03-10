@@ -1,12 +1,9 @@
-@charset "UTF-8";
-/* Підключення фрифтів */
-/* Google Fonts (Plugin) */
-/* Локальне підключення шрифтів */
-/* .... */
-/* Скидання стилів */
 @import url("reset.css");
-/* Основні стилі */
 body {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.875rem;
+  background-color: #141414;
+  color: #999999;
   /*
   opacity: 0;
   transition: opacity 1.5s;
@@ -15,6 +12,16 @@ body {
   	opacity: 1;
   }
   */
+}
+@media only screen and (min-width: 48em) {
+  body {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 109.8125em) {
+  body {
+    font-size: 1.125rem;
+  }
 }
 
 .wrapper {
@@ -37,9 +44,36 @@ body {
 
 /* --------------------- */
 [class*=__container] {
-  max-width: 1200px;
-  padding-inline: 15px;
-  margin: 0 auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  max-width: 80rem;
+  padding-inline: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 90em) {
+  [class*=__container] {
+    max-width: 99.8125rem;
+    padding-inline: 5rem;
+  }
 }
 
 /* --------------------- */
+.section-title {
+  color: #ffffff;
+  font-family: "Manrope";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5; /* 36px */
+}
+@media only screen and (min-width: 48em) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+}
+@media only screen and (min-width: 109.8125em) {
+  .section-title {
+    font-size: 2.375rem;
+  }
+}
