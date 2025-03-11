@@ -2,6 +2,7 @@
 body {
   font-family: "Manrope", sans-serif;
   font-size: 0.875rem;
+  line-height: 1.5;
   background-color: #141414;
   color: #999999;
   /*
@@ -59,21 +60,33 @@ body {
 }
 
 /* --------------------- */
-.section-title {
-  color: #ffffff;
-  font-family: "Manrope";
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.5; /* 36px */
+.section-header__title:not(:last-child) {
+  margin-bottom: 0.5em;
 }
 @media only screen and (min-width: 48em) {
-  .section-title {
+  .section-header__title:not(:last-child) {
+    margin-bottom: 0.3571428571em;
+  }
+}
+@media only screen and (min-width: 109.8125em) {
+  .section-header__title:not(:last-child) {
+    margin-bottom: 0.3684210526em;
+  }
+}
+.title-section {
+  font-family: "Manrope";
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5; /* 36px */
+  color: #ffffff;
+}
+@media only screen and (min-width: 48em) {
+  .title-section {
     font-size: 1.75rem;
   }
 }
 @media only screen and (min-width: 109.8125em) {
-  .section-title {
+  .title-section {
     font-size: 2.375rem;
   }
 }

@@ -1,19 +1,41 @@
-//
-.section-title {
-    color: $section-title-color;
-    font-family: 'Manrope';
-    font-size: toRem(20);
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.5; /* 36px */
+// Section-title
 
-    	// Laptop
+.section-header {
+	// .section-header__title
+	&__title {
+		&:not(:last-child) {
+			margin-bottom: toEm(10, 20);
+
+			// Laptop
+			@media only screen and (min-width: toEm(768)) {
+				margin-bottom: toEm(10, 28);
+			}
+
+			// Desktop
+			@media only screen and (min-width: toEm(1757)) {
+				margin-bottom: toEm(14, 38);
+			}
+		}
+	}
+	// .section-header__text
+	&__text {
+	}
+}
+
+.title-section {
+	font-family: "Manrope";
+	font-size: toRem(20);
+	font-weight: 700;
+	line-height: 1.5; /* 36px */
+	color: $section-title-color;
+
+	// Laptop
 	@media only screen and (min-width: toEm(768)) {
-        font-size: toRem(28);
+		font-size: toRem(28);
 	}
 
 	// Desktop
 	@media only screen and (min-width: toEm(1757)) {
-        font-size: toRem(38);
+		font-size: toRem(38);
 	}
 }
