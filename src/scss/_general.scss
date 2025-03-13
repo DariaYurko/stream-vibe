@@ -7,7 +7,7 @@ body {
 	color: $color-text;
 
 	// Laptop
-	@media only screen and (min-width: toEm(768)) {
+	@media only screen and (min-width: toEm(1024)) {
 		font-size: toRem(16);
 	}
 
