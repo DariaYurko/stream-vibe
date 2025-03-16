@@ -20,7 +20,7 @@ body {
     font-size: 1rem;
   }
 }
-@media only screen and (min-width: 109.8125em) {
+@media only screen and (min-width: 120em) {
   body {
     font-size: 1.125rem;
   }
@@ -53,10 +53,10 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-@media only screen and (min-width: 90em) {
+@media only screen and (min-width: 90.0625em) {
   [class*=__container] {
-    max-width: 99.8125rem;
     padding-inline: 5rem;
+    max-width: 99.8125rem;
   }
 }
 
@@ -92,6 +92,9 @@ body {
   }
 }
 
+.logo {
+  display: -moz-inline-grid;
+}
 @media only screen and (max-width: 767px) {
   .header {
     -webkit-padding-before: 2.3125rem;
@@ -126,11 +129,73 @@ body {
   justify-self: end;
 }
 
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 4px solid #1f1f1f;
+  border-radius: 12px;
+  background-color: #0f0f0f;
+  padding: 0.625rem 0.625rem;
+}
+.menu__link {
+  color: #bfbfbf;
+  border-radius: 0.5rem;
+  padding-block: 0.875rem;
+  padding-inline: 0.9375rem;
+}
+.menu__link:hover {
+  color: #ffffff;
+}
+.menu__link.current {
+  padding-inline: 1.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #1a1a1a;
+}
+
 .actions-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 1.0625rem;
+     -moz-column-gap: 1.0625rem;
+          column-gap: 1.0625rem;
 }
+@media only screen and (min-width: 90.0625em) {
+  .actions-header {
+    -webkit-column-gap: 1.875rem;
+       -moz-column-gap: 1.875rem;
+            column-gap: 1.875rem;
+  }
+}
+.actions-header__button {
+  color: #ffffff;
+}
+.actions-header__button:hover {
+  color: #bfbfbf;
+}
+@media only screen and (min-width: 64em) {
+  .actions-header__button {
+    font-size: 1.125rem;
+  }
+}
+@media only screen and (min-width: 90.0625em) {
+  .actions-header__button {
+    font-size: 1.6875rem;
+  }
+}
+
 .button-menu {
   display: none;
 }

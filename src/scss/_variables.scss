@@ -1,3 +1,6 @@
+$white-color: #ffffff;
+
+
 // Red Shades
 $red-shade-45: #e50000;
 $red-shade-50: #ff0000;
@@ -29,6 +32,7 @@ $gray-shade-97: #f7f7f8;
 $gray-shade-99: #fcfcfd;
 
 // 
+
 $color-text: $gray-shade-60;
-$section-title-color: #ffffff;
+$section-title-color: $white-color;
 $bg-color: $black-shade-08;

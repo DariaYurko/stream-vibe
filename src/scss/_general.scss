@@ -12,7 +12,7 @@ body {
 	}
 
 	// Desktop 1597px + 80px +80px
-	@media only screen and (min-width: toEm(1757)) {
+	@media only screen and (min-width: toEm(1920)) {
 		font-size: toRem(18);
 	}
 	/*
@@ -47,10 +47,14 @@ body {
 	margin-right: auto;
 
 
+	// Laptop
+	@media only screen and (min-width: toEm(1024)) {
+	}
+	
 	// Desktop
-	@media only screen and (min-width: toEm(1440)) {
-		max-width: toRem(1597);
+	@media only screen and (min-width: toEm(1441)) {
 		padding-inline: toRem(80);
+		max-width: toRem(1597);
 	}
 }
 /* --------------------- */

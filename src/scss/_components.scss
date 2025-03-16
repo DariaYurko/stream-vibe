@@ -39,3 +39,12 @@
 		font-size: toRem(38);
 	}
 }
+
+// Logotype
+
+.logo {
+	display: -moz-inline-grid;
+	// .logo__icon
+	&__icon {
+	}
+}
