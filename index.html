@@ -7,8 +7,8 @@
     <link rel="icon" type="image/svg+xml" href="/stream-vibe/favicon.svg" />
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Manrope:400,500,600,700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/stream-vibe/assets/main-Cyaed20b.js"></script>
-    <link rel="stylesheet" crossorigin href="/stream-vibe/assets/main-DOIVAGgZ.css">
+    <script type="module" crossorigin src="/stream-vibe/assets/main-rgfG7hAt.js"></script>
+    <link rel="stylesheet" crossorigin href="/stream-vibe/assets/main-Bhop7h0W.css">
   </head>
   <body>
     <div class="wrapper" id="top">
@@ -16,7 +16,11 @@
     <div class="header__container">
 
         <!-- Logotype -->
-        <img src="../img/icons/logo.svg" alt="Logotype" class="header__logo">
+        <div class="header__logo">
+            <a href="../index.html" class="logo">
+                <img src="../img/icons/logo.svg" alt="Logotype" class="logo__icon">
+            </a>
+        </div>
 
         <!-- Menu -->
         <div class="header__menu menu">
@@ -24,7 +28,7 @@
             <nav class="menu__body">
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a href="#" class="menu__link">Home</a>
+                        <a href="#" class="menu__link current">Home</a>
                     </li>
                     <li class="menu__item">
                         <a href="#" class="menu__link">Movies & Shows</a>
@@ -42,14 +46,15 @@
         <!-- Actions -->
         <ul class="header__actions actions-header">
             <li class="actions-header__item">
-                <button data-popup="popup-search" class="actions-header__button -icon-search" type="button"></button>
+                <button data-popup="#popup-search" class="actions-header__button -icon-search" type="button"></button>
             </li>
             <li class="actions-header__item">
-                <button data-popup="popup-notification" class="actions-header__button -icon-notification" type="button"></button>
+                <button data-popup="#popup-notification" class="actions-header__button -icon-notification"
+                    type="button"></button>
             </li>
         </ul>
 
-        <!-- Button-menu -->
+        <!-- Button-menu-togle -->
         <button class="button-menu" type="button"><span></span></button>
     </div>
 </header>
